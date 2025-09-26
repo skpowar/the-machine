@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Machine™ HR Handbook - LinkedIn Post</title>
+<style>
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+background: linear-gradient(135deg, #0077b5 0%, #004471 100%);
+min-height: 100vh;
+margin: 0;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+padding-top: 40px;
+}
+
+```
+    .linkedin-post {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        max-width: 552px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .post-header {
+        padding: 16px 20px 12px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .profile-pic {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, #ff6b6b 0%, #ee5a24 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .profile-info h3 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    .profile-info p {
+        margin: 2px 0 0;
+        font-size: 12px;
+        color: #666;
+    }
+
+    .post-content {
+        padding: 0 20px 16px;
+        line-height: 1.4;
+        font-size: 14px;
+        color: #000;
+    }
+
+    .main-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #0077b5;
+        margin-bottom: 8px;
+        text-align: center;
+        background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .subtitle {
+        font-style: italic;
+        color: #666;
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 13px;
+        border-bottom: 2px solid #f1f1f1;
+        padding-bottom: 12px;
+    }
+
+    .chapter {
+        margin-bottom: 16px;
+        border-left: 3px solid #0077b5;
+        padding-left: 12px;
+    }
+
+    .chapter-title {
+        font-weight: bold;
+        color: #0077b5;
+        margin-bottom: 6px;
+        font-size: 15px;
+    }
+
+    .highlight {
+        background: linear-gradient(120deg, #ffeaa7 0%, #fab1a0 100%);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-weight: 500;
+    }
+
+    .evil-highlight {
+        background: linear-gradient(120deg, #ff7675 0%, #fd79a8 100%);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .quote {
+        background: #f8f9fa;
+        border-left: 4px solid #0077b5;
+        padding: 12px 16px;
+        margin: 12px 0;
+        font-style: italic;
+        border-radius: 0 8px 8px 0;
+    }
+
+    .value-item {
+        margin: 8px 0;
+        padding: 8px 12px;
+        background: linear-gradient(135deg, #e8f4fd 0%, #f1f8ff 100%);
+        border-radius: 6px;
+        border-left: 3px solid #0077b5;
+    }
+
+    .value-name {
+        font-weight: bold;
+        color: #0077b5;
+    }
+
+    .warning-box {
+        background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+        border: 2px solid #fc8181;
+        border-radius: 8px;
+        padding: 12px;
+        margin: 12px 0;
+        font-size: 12px;
+        color: #742a2a;
+    }
+
+    .engagement-bar {
+        padding: 8px 20px;
+        border-top: 1px solid #e1e5e9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        color: #666;
+    }
+
+    .reactions {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .reaction-emoji {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        margin-right: -4px;
+        border: 2px solid white;
+    }
+
+    .like { background: #1877f2; color: white; }
+    .laugh { background: #f7b928; color: white; }
+    .angry { background: #e74c3c; color: white; }
+    .scared { background: #9b59b6; color: white; }
+    .cry { background: #3498db; color: white; }
+
+    .action-buttons {
+        padding: 8px 20px;
+        border-top: 1px solid #e1e5e9;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .action-btn {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 16px;
+        border: none;
+        background: none;
+        color: #666;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background 0.2s;
+    }
+
+    .action-btn:hover {
+        background: #f3f2ef;
+    }
+
+    ul {
+        margin: 6px 0 6px 16px;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 4px;
+    }
+
+    .mascot {
+        text-align: center;
+        background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+        color: white;
+        padding: 12px;
+        border-radius: 8px;
+        margin: 12px 0;
+    }
+
+    .final-note {
+        background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+        color: white;
+        padding: 16px;
+        border-radius: 8px;
+        text-align: center;
+        margin: 16px 0;
+        font-weight: 500;
+    }
+
+    .comment-preview {
+        background: #f8f9fa;
+        border-top: 1px solid #e1e5e9;
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+
+    .comment {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .comment-pic {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #ddd;
+        flex-shrink: 0;
+    }
+
+    .comment-content {
+        background: white;
+        padding: 6px 12px;
+        border-radius: 16px;
+        border: 1px solid #e1e5e9;
+    }
+
+    .comment-name {
+        font-weight: 600;
+        font-size: 11px;
+        margin-bottom: 2px;
+    }
+</style>
+
+```
+
+</head>
+<body>
+<div class="linkedin-post">
+<div class="post-header">
+<div class="profile-pic">🤖</div>
+<div class="profile-info">
+<h3>The Machine™ HR Department</h3>
+<p>Chief Exploitation Officers • 1,984,000 followers</p>
+<p style="font-size: 11px; color: #999;">2h • 🌍 Promoting post • Sponsored by Big Brother Corp</p>
+</div>
+</div>
+
+```
+    <div class="post-content">
+        <div class="main-title">🧠 Welcome to The Machine™</div>
+        <div class="subtitle">The Official HR Handbook for Emotionally Sustainable Exploitation™</div>
+        <div class="subtitle">📖 Version 2024.9 - "Now with 47% more gaslighting!"</div>
+
+        <p>Excited to share our newly updated employee handbook! We've <span class="highlight">innovated</span> the workplace experience to maximize human potential extraction while maintaining plausible legal deniability! 🎉</p>
+
+        <div class="chapter">
+            <div class="chapter-title">🎯 Our Mission Statement:</div>
+            <div class="quote">
+                "We believe in empowering employees to reach their <span class="evil-highlight">breaking point</span>—I mean, full potential! Our mission is to foster innovation, collaboration, and just enough <span class="highlight">Stockholm Syndrome</span> to prevent unionization."
+            </div>
+            <p><strong>New Motto:</strong> "We don't micromanage. We <span class="evil-highlight">macro-gaslight</span>." 🔥</p>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">🏆 Core Values (Mandatory Memorization Required):</div>
+            <div class="value-item">
+                <span class="value-name">• Hustle Over Humanity™:</span> If you're not having stress dreams about Excel, you're underperforming.
+            </div>
+            <div class="value-item">
+                <span class="value-name">• Radical Transparency™:</span> We're transparent about everything except salaries, layoffs, and why the CEO needs a third yacht.
+            </div>
+            <div class="value-item">
+                <span class="value-name">• Collaboration™:</span> You do everyone's job while they're at Burning Man.
+            </div>
+            <div class="value-item">
+                <span class="value-name">• Innovation Through Desperation™:</span> Our best ideas come from 3 AM panic attacks!
+            </div>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">💰 Compensation & "Benefits":</div>
+            <ul>
+                <li><strong>Salary:</strong> Competitive with 2007 standards, paid in crypto we invented</li>
+                <li><strong>Health Insurance:</strong> Covers paper cuts and existential dread only</li>
+                <li><strong>Mental Health Support:</strong> One (1) crying emoji per quarter + access to our AI therapist "ChapGPTsd"</li>
+                <li><strong>Unlimited PTO:</strong> Available never, monitored always, judged eternally</li>
+                <li><strong>Snacks:</strong> Stale granola bars and the tears of interns</li>
+            </ul>
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">🧘 Work-Life Balance™:</div>
+            <p>We encourage balance by scheduling <span class="highlight">mandatory relaxation sessions</span> during crunch time and hosting mindfulness seminars led by our anxiety-ridden CFO who hasn't slept since Q2! 🧘‍♀️</p>
+        </div>
+
+        <div class="mascot">
+            <div style="font-size: 16px; margin-bottom: 8px;">Meet Our Mascot: Grindy the Skeleton™ 💀</div>
+            <div style="font-style: italic;">"You're not burnt out, you're <span class="highlight" style="background: white; color: black;">evolving into your final form!</span>"</div>
+        </div>
+
+        <div class="warning-box">
+            🚨 <strong>New Policy Alert:</strong> We've replaced performance reviews with a Hunger Games-style elimination process! May the odds of not getting fired be ever in your favor! 🏹
+        </div>
+
+        <div class="chapter">
+            <div class="chapter-title">🚪 Exit Interview Process:</div>
+            <ul>
+                <li>We'll ask what we could improve, then implement the opposite</li>
+                <li>Your farewell email will misspell your name and thank "Jennifer" for your service</li>
+                <li>Your job will be distributed among a Magic 8-Ball and our office cactus</li>
+                <li>We'll post your position at 60% of your salary with "competitive compensation!"</li>
+            </ul>
+        </div>
+
+        <div class="final-note">
+            🎭 <strong>Remember:</strong> You are valued!<br>
+            Not enough to pay a living wage, but enough to put your face on our diversity brochure while we simultaneously eliminate your position through "AI optimization."<br><br>
+            Welcome aboard The Machine™!<br>
+            Resistance is futile. Compliance is profitable. 🤖
+        </div>
+
+        <p style="font-size: 12px; color: #999; text-align: center; margin-top: 16px;">
+            #TheGreatResignation #ToxicPositivity #CorporateOverlords #LinkedInLunacy #ModernSlavery #HRIsntYourFriend #CapitalismGoneMad #WorkplaceDystopia #SendHelp
+        </p>
+    </div>
+
+    <div class="engagement-bar">
+        <div class="reactions">
+            <div class="reaction-emoji laugh">😂</div>
+            <div class="reaction-emoji scared">😱</div>
+            <div class="reaction-emoji angry">😡</div>
+            <div class="reaction-emoji cry">😭</div>
+            <div class="reaction-emoji like">👍</div>
+            <span style="margin-left: 8px;">47,382 reactions • 12,847 comments</span>
+        </div>
+        <span>28,394 shares</span>
+    </div>
+
+    <div class="action-buttons">
+        <button class="action-btn">👍 Like</button>
+        <button class="action-btn">💬 Comment</button>
+        <button class="action-btn">📤 Share</button>
+        <button class="action-btn">📩 Send</button>
+    </div>
+
+    <div class="comment-preview">
+        <div class="comment">
+            <div class="comment-pic" style="background: #e74c3c;"></div>
+            <div class="comment-content">
+                <div class="comment-name">Sarah M. (Former Employee)</div>
+                <div>This gave me PTSD flashbacks to my last job 😭</div>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="comment-pic" style="background: #3498db;"></div>
+            <div class="comment-content">
+                <div class="comment-name">Corporate Overlord LLC</div>
+                <div>Taking notes... asking for a friend 📝</div>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="comment-pic" style="background: #2ecc71;"></div>
+            <div class="comment-content">
+                <div class="comment-name">Exhausted Millennial</div>
+                <div>Wait, this is supposed to be SATIRE?? 😳</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+```
+
+</body>
+</html>
